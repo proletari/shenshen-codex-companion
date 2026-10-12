@@ -1,0 +1,342 @@
+{
+  "name": "深深",
+  "design": "early-orange-shirt-black-tie-long-trousers",
+  "format": "APNG",
+  "width": 608,
+  "height": 608,
+  "footBaseline": 544,
+  "states": {
+    "idle": {
+      "label": "待机眨眼",
+      "file": "shenshen-idle.png",
+      "frameCount": 6,
+      "uniqueFrames": 6,
+      "durationMs": [
+        500,
+        180,
+        100,
+        140,
+        100,
+        400
+      ],
+      "frameOffsets": [
+        {
+          "x": 17,
+          "y": 51
+        },
+        {
+          "x": 55,
+          "y": 51
+        },
+        {
+          "x": 78,
+          "y": 51
+        },
+        {
+          "x": 19,
+          "y": 56
+        },
+        {
+          "x": 52,
+          "y": 56
+        },
+        {
+          "x": 81,
+          "y": 56
+        }
+      ],
+      "fixedRig": {
+        "baseFrame": 0,
+        "motionRects": [
+          {
+            "kind": "eyes",
+            "x": 229,
+            "y": 238,
+            "width": 156,
+            "height": 52
+          }
+        ]
+      },
+      "bytes": 1454707,
+      "source": "docs/shenshen/sources/idle.png"
+    },
+    "working": {
+      "label": "敲键盘",
+      "file": "shenshen-working.png",
+      "frameCount": 6,
+      "uniqueFrames": 6,
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "frameOffsets": [
+        {
+          "x": 6,
+          "y": 38
+        },
+        {
+          "x": 47,
+          "y": 39
+        },
+        {
+          "x": 80,
+          "y": 39
+        },
+        {
+          "x": 8,
+          "y": 55
+        },
+        {
+          "x": 48,
+          "y": 55
+        },
+        {
+          "x": 80,
+          "y": 54
+        }
+      ],
+      "fixedRig": {
+        "baseFrame": 0,
+        "motionRects": [
+          {
+            "kind": "eyes",
+            "x": 211,
+            "y": 278,
+            "width": 164,
+            "height": 54
+          },
+          {
+            "kind": "hands",
+            "x": 274,
+            "y": 410,
+            "width": 21,
+            "height": 32
+          },
+          {
+            "kind": "hands",
+            "x": 295,
+            "y": 438,
+            "width": 55,
+            "height": 33
+          }
+        ]
+      },
+      "bytes": 1857284,
+      "source": "docs/shenshen/sources/working.png"
+    },
+    "thinking": {
+      "label": "思考",
+      "file": "shenshen-thinking.png",
+      "frameCount": 6,
+      "uniqueFrames": 6,
+      "durationMs": [
+        280,
+        220,
+        260,
+        180,
+        280,
+        240
+      ],
+      "frameOffsets": [
+        {
+          "x": 19,
+          "y": 51
+        },
+        {
+          "x": 49,
+          "y": 52
+        },
+        {
+          "x": 75,
+          "y": 52
+        },
+        {
+          "x": 7,
+          "y": 67
+        },
+        {
+          "x": 33,
+          "y": 66
+        },
+        {
+          "x": 68,
+          "y": 66
+        }
+      ],
+      "bytes": 1424703,
+      "source": "docs/shenshen/sources/thinking.png"
+    },
+    "celebrate": {
+      "label": "完成庆祝",
+      "file": "shenshen-celebrate.png",
+      "frameCount": 6,
+      "uniqueFrames": 6,
+      "durationMs": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        220
+      ],
+      "frameOffsets": [
+        {
+          "x": 21,
+          "y": 53
+        },
+        {
+          "x": 49,
+          "y": 53
+        },
+        {
+          "x": 78,
+          "y": 53
+        },
+        {
+          "x": 17,
+          "y": 55
+        },
+        {
+          "x": 49,
+          "y": 55
+        },
+        {
+          "x": 73,
+          "y": 55
+        }
+      ],
+      "bytes": 1551567,
+      "source": "docs/shenshen/sources/celebrate.png"
+    },
+    "failed": {
+      "label": "排错恢复",
+      "file": "shenshen-failed.png",
+      "frameCount": 6,
+      "uniqueFrames": 6,
+      "durationMs": [
+        250,
+        250,
+        250,
+        250,
+        250,
+        300
+      ],
+      "frameOffsets": [
+        {
+          "x": 14,
+          "y": 35
+        },
+        {
+          "x": 39,
+          "y": 34
+        },
+        {
+          "x": 61,
+          "y": 35
+        },
+        {
+          "x": 16,
+          "y": 48
+        },
+        {
+          "x": 45,
+          "y": 49
+        },
+        {
+          "x": 62,
+          "y": 48
+        }
+      ],
+      "bytes": 1842183,
+      "source": "docs/shenshen/sources/failed.png"
+    },
+    "wave": {
+      "label": "挥手回应",
+      "file": "shenshen-wave.png",
+      "frameCount": 6,
+      "uniqueFrames": 6,
+      "durationMs": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        220
+      ],
+      "frameOffsets": [
+        {
+          "x": 20,
+          "y": 55
+        },
+        {
+          "x": 44,
+          "y": 54
+        },
+        {
+          "x": 65,
+          "y": 54
+        },
+        {
+          "x": 17,
+          "y": 54
+        },
+        {
+          "x": 45,
+          "y": 55
+        },
+        {
+          "x": 67,
+          "y": 55
+        }
+      ],
+      "bytes": 1524836,
+      "source": "docs/shenshen/sources/wave.png"
+    },
+    "jump": {
+      "label": "落下小跳",
+      "file": "shenshen-jump.png",
+      "frameCount": 6,
+      "uniqueFrames": 6,
+      "durationMs": [
+        150,
+        140,
+        180,
+        160,
+        170,
+        250
+      ],
+      "frameOffsets": [
+        {
+          "x": 28,
+          "y": 52
+        },
+        {
+          "x": 46,
+          "y": 53
+        },
+        {
+          "x": 53,
+          "y": 52
+        },
+        {
+          "x": 24,
+          "y": 52
+        },
+        {
+          "x": 39,
+          "y": 66
+        },
+        {
+          "x": 51,
+          "y": 68
+        }
+      ],
+      "bytes": 1477174,
+      "source": "docs/shenshen/sources/jump.png"
+    }
+  }
+}
