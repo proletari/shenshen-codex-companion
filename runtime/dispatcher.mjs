@@ -137,6 +137,9 @@ export function createDispatcher({ dataDir = DATA_HOME, service = null, monitor 
       uiFiles['/dashboard.js']='dashboard.js';
       uiFiles['/connection-settings.js']='connection-settings.js';
       uiFiles['/balance-view.js']='balance-view.js';
+      uiFiles['/shenshen-actions.js']='shenshen-actions.js';
+      uiFiles['/shenshen-preview.html']='shenshen-preview.html';
+      uiFiles['/shenshen-preview.js']='shenshen-preview.js';
       let file;
       if (Object.hasOwn(uiFiles, url.pathname)) file = path.join(ROOT, 'desktop', 'ui', uiFiles[url.pathname]);
       else if (url.pathname.startsWith('/assets/')) {

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>深深动作预览</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#faf6ee;color:#302c28;font:16px/1.6 system-ui,sans-serif}
+    main{max-width:980px;margin:48px auto;padding:0 24px}h1{font-size:30px;margin:0}p{color:#686058}
+    .badge{display:inline-block;font-size:13px;padding:2px 9px;background:#fff0d5;color:#82501f;border-radius:20px}
+    .layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}.stage{min-height:380px;border:1px solid #e1d8cc;border-radius:20px;display:grid;place-items:center;background-color:white;background-image:linear-gradient(45deg,#f3f0e9 25%,transparent 25%),linear-gradient(-45deg,#f3f0e9 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#f3f0e9 75%),linear-gradient(-45deg,transparent 75%,#f3f0e9 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0}
+    .stage img{width:min(100%,320px);height:320px;object-fit:contain;touch-action:none;cursor:grab}.stage img:active{cursor:grabbing;transform:scale(.97,.92)}
+    section{background:#fff;border:1px solid #e1d8cc;border-radius:20px;padding:24px}h2{font-size:18px;margin:0 0 12px}.buttons{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}button{font:inherit;border:1px solid #ddd0bf;background:#fffaf2;color:inherit;border-radius:9px;padding:7px 12px;cursor:pointer}button:hover{background:#ffe4ba}button:focus-visible{outline:3px solid #a56d27}label{display:flex;gap:8px;align-items:center}#status{font-weight:600;color:#7b4517}#error{color:#b13e22}footer{font-size:13px;color:#746b63;margin-top:24px}@media(max-width:700px){main{margin-top:24px}.layout{grid-template-columns:1fr}.stage{min-height:340px}}
+  </style>
+  <script src="shenshen-actions.js" defer></script><script src="shenshen-preview.js" defer></script>
+</head>
+<body><main>
+  <span class="badge">模拟状态 · 本地动作预览</span><h1>深深来陪你工作</h1>
+  <p>保留橙色猫耳帽、黑领带和橙衬衫的早期造型。这里仅模拟事件，不连接 Codex、不读取日志或账户配置。</p>
+  <div class="layout">
+    <div class="stage"><img id="pet" alt="深深动作素材加载中" draggable="false"></div>
+    <section>
+      <h2>基础状态</h2><div class="buttons"><button data-monitor="0">空闲</button><button data-monitor="1">开始工作</button><button data-monitor="2">两个任务并行</button></div>
+      <h2>短动作</h2><div class="buttons"><button data-action="thinking">思考（手动）</button><button data-action="wave">挥手</button><button data-action="jump">跳跃</button><button data-notice="success">任务完成</button><button data-notice="failed">任务失败</button><button data-notice="cancelled">取消任务</button></div>
+      <label><input id="protect" type="checkbox">模拟按压保护：延迟切换动作</label>
+      <p id="status" role="status">当前：加载中</p><p id="error" role="alert" hidden></p>
+      <p>点击深深会挥手；拖动后释放会跳跃。短动作结束后恢复最新基础状态。思考动作仅手动预览。</p>
+    </section>
+  </div>
+  <footer>每个动作使用独立透明 APNG，由浏览器播放逐帧动画。棋盘格只用于检查透明边缘。</footer>
+</main></body></html>
