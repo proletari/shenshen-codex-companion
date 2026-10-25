@@ -1,0 +1,51 @@
+{
+  "name": "dsh-shenshen-companion",
+  "version": "0.1.0",
+  "description": "Shenshen desktop companion for DeepSeek Harness: task-aware transparent animations, click/drag interactions, and the upstream balance, usage, role, bubble and sound settings. 基于 dsh-whale-widget 0.4.2 的深深角色分支。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "shenshen",
+    "desktop-pet",
+    "pet",
+    "balance",
+    "widget"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.png",
+  "author": "proletari",
+  "license": "MIT",
+  "homepage": "https://github.com/proletari/shenshen-codex-companion/tree/master/dsh-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proletari/shenshen-codex-companion.git",
+    "directory": "dsh-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/proletari/shenshen-codex-companion/issues"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "docs",
+    "icon.png",
+    "cordis.patch.yml",
+    "README.md",
+    "PROVENANCE.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20.18.0",
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.2"
+    }
+  }
+}

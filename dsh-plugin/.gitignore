@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.npm-cache/
+*.tgz
+desktop-runtime/
+desktop-profile/
+*.log

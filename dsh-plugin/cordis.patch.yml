@@ -1,0 +1,15 @@
+# ============================================================================
+# dsh-shenshen-companion —— DSH bundle patch
+# ============================================================================
+# 这是插件的"挂载声明"。DSH 启动时按 bundle 层栈叠加各插件 patch，
+# 本文件会把深深桌宠插件插入当前 profile 的配置树。
+#
+# 安装方式（本地开发，推荐）：
+#   dsh plugin --profile desktop add link:<本目录绝对路径>
+# 发布到 npm 后：
+#   dsh plugin --profile desktop add dsh-shenshen-companion
+# ============================================================================
+
+- insert:
+    - id: dsh-shenshen-companion
+      name: dsh-shenshen-companion

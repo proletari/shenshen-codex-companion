@@ -6,6 +6,10 @@
 
 ![深深工作状态预览](docs/shenshen/preview.jpg)
 
+## DeepSeek Harness（DSH）版本
+
+同一角色也提供了 DSH 插件版本：[`dsh-plugin/`](dsh-plugin/README.md)。它包含 7 组 APNG、左右两向奔跑、任务状态联动（待机 / 工作 / 思考 / 完成 / 失败）、点击挥手 / 拖动奔跑，并保留余额、用量、角色、气泡与音效。安装方式与已知限制见子目录 README。
+
 ## 下载与 Windows 安装
 
 从 [Code → Download ZIP](https://github.com/proletari/shenshen-codex-companion/archive/refs/heads/master.zip) 下载完整源码，解压到固定目录；也可以使用 Git：
